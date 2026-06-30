@@ -101,7 +101,7 @@ function ServiceDetail() {
           <div>
             <h2 className="text-xl font-bold">What’s included</h2>
             <ul className="mt-6 space-y-4">
-              {service.highlights.map((h) => (
+              {service.highlights.map((h: string) => (
                 <li key={h} className="flex items-start gap-3">
                   <span className="mt-0.5 grid size-5 place-items-center rounded-full border border-accent/20 bg-accent-soft">
                     <Check className="size-3 text-accent" />
