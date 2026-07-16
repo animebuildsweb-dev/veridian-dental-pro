@@ -1,6 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CLINIC, TESTIMONIALS } from "@/lib/clinic";
 import { Quote, Star } from "lucide-react";
+import video1 from "@/assets/img_7599.mp4.asset.json";
+import video2 from "@/assets/img_7600.mp4.asset.json";
+import video3 from "@/assets/img_7601.mp4.asset.json";
+import video4 from "@/assets/img_7602.mp4.asset.json";
+
+const VIDEO_TESTIMONIALS = [video1, video2, video3, video4];
 
 const TITLE = `Patient Testimonies | ${CLINIC.name}`;
 const DESC = `Read genuine patient testimonies for Dr. Varun's Dental Clinic in Ahmedabad — rated ${CLINIC.rating}★ by ${CLINIC.reviewCount}+ patients for painless, world-class dental care.`;
