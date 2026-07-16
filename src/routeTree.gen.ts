@@ -9,6 +9,8 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TransformationRouteImport } from './routes/transformation'
+import { Route as TestimoniesRouteImport } from './routes/testimonies'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as FaqRouteImport } from './routes/faq'
@@ -17,6 +19,16 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
 
+const TransformationRoute = TransformationRouteImport.update({
+  id: '/transformation',
+  path: '/transformation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimoniesRoute = TestimoniesRouteImport.update({
+  id: '/testimonies',
+  path: '/testimonies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -60,6 +72,8 @@ export interface FileRoutesByFullPath {
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/testimonies': typeof TestimoniesRoute
+  '/transformation': typeof TransformationRoute
   '/services/$slug': typeof ServicesSlugRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +83,8 @@ export interface FileRoutesByTo {
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/testimonies': typeof TestimoniesRoute
+  '/transformation': typeof TransformationRoute
   '/services/$slug': typeof ServicesSlugRoute
 }
 export interface FileRoutesById {
@@ -79,6 +95,8 @@ export interface FileRoutesById {
   '/faq': typeof FaqRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/testimonies': typeof TestimoniesRoute
+  '/transformation': typeof TransformationRoute
   '/services/$slug': typeof ServicesSlugRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +108,8 @@ export interface FileRouteTypes {
     | '/faq'
     | '/services'
     | '/sitemap.xml'
+    | '/testimonies'
+    | '/transformation'
     | '/services/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +119,8 @@ export interface FileRouteTypes {
     | '/faq'
     | '/services'
     | '/sitemap.xml'
+    | '/testimonies'
+    | '/transformation'
     | '/services/$slug'
   id:
     | '__root__'
@@ -108,6 +130,8 @@ export interface FileRouteTypes {
     | '/faq'
     | '/services'
     | '/sitemap.xml'
+    | '/testimonies'
+    | '/transformation'
     | '/services/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -118,10 +142,26 @@ export interface RootRouteChildren {
   FaqRoute: typeof FaqRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TestimoniesRoute: typeof TestimoniesRoute
+  TransformationRoute: typeof TransformationRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/transformation': {
+      id: '/transformation'
+      path: '/transformation'
+      fullPath: '/transformation'
+      preLoaderRoute: typeof TransformationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonies': {
+      id: '/testimonies'
+      path: '/testimonies'
+      fullPath: '/testimonies'
+      preLoaderRoute: typeof TestimoniesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -193,6 +233,8 @@ const rootRouteChildren: RootRouteChildren = {
   FaqRoute: FaqRoute,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TestimoniesRoute: TestimoniesRoute,
+  TransformationRoute: TransformationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
