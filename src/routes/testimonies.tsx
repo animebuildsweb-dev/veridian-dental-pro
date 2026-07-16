@@ -50,6 +50,32 @@ function TestimoniesPage() {
           </p>
         </header>
 
+        <div className="mt-16">
+          <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">
+            Video testimonies
+          </h2>
+          <p className="mt-2 text-muted-foreground">
+            Watch patients share their experience in their own words.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {VIDEO_TESTIMONIALS.map((v, i) => (
+              <div
+                key={v.url}
+                className="overflow-hidden rounded-3xl border border-border bg-card"
+              >
+                <video
+                  src={v.url}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="aspect-[9/16] w-full bg-black object-cover"
+                  aria-label={`Patient video testimony ${i + 1}`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <figure
