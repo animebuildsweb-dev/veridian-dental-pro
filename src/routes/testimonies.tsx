@@ -1,10 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useRef } from "react";
 import { CLINIC, TESTIMONIALS } from "@/lib/clinic";
 import { Quote, Star } from "lucide-react";
 import video1 from "@/assets/img_7599.mp4.asset.json";
 import video2 from "@/assets/img_7600.mp4.asset.json";
 import video3 from "@/assets/img_7601.mp4.asset.json";
 import video4 from "@/assets/img_7602.mp4.asset.json";
+
+function AutoPlayVideo({ src, label }: { src: string; label: string }) {
+  const ref = useRef<HTMLVideoElement | null>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            el.play().catch(() => {});
+          } else {
+            el.pause();
+          }
+        }
+      },
+      { threshold: 0.5 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  return (
+    <video
+      ref={ref}
+      src={src}
+      controls
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      className="aspect-[9/16] w-full bg-black object-cover"
+      aria-label={label}
+    />
+  );
+}
 
 const VIDEO_TESTIMONIALS = [video1, video2, video3, video4];
 
@@ -63,14 +99,7 @@ function TestimoniesPage() {
                 key={v.url}
                 className="overflow-hidden rounded-3xl border border-border bg-card"
               >
-                <video
-                  src={v.url}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="aspect-[9/16] w-full bg-black object-cover"
-                  aria-label={`Patient video testimony ${i + 1}`}
-                />
+                <AutoPlayVideo src={v.url} label={`Patient video testimony ${i + 1}`} />
               </div>
             ))}
           </div>
