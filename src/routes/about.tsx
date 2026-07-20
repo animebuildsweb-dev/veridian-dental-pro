@@ -54,7 +54,7 @@ function AboutPage() {
             </p>
             <p className="mt-6 leading-relaxed text-muted-foreground">
               With over 20 years in clinical practice, Dr. Varun has built a reputation for combining
-              technical excellence with a genuinely warm bedside manner. From single-visit root canals to
+              technical excellence with a genuinely warm chairside manner. From single-visit root canals to
               complex full-mouth rehabilitations, every treatment plan is tailored, transparent and
               comfortable.
             </p>

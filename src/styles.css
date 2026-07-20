@@ -37,39 +37,44 @@
   --color-ring: var(--ring);
   --color-surface: var(--surface);
   --color-whatsapp: var(--whatsapp);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
 }
 
 :root {
   --radius: 0.75rem;
 
-  /* Clinical Precision palette */
-  --background: oklch(0.992 0 0);            /* #fdfdfd */
-  --foreground: oklch(0.21 0.034 264.5);     /* #0f172a slate-900 */
-  --surface: oklch(0.974 0.003 247.86);      /* slate-50 */
-  --muted: oklch(0.968 0.007 247.9);
-  --muted-foreground: oklch(0.554 0.046 257.4); /* slate-500 */
-  --card: oklch(1 0 0);
+  /* Premium Navy & Gold palette — brand navy #063970 */
+  --background: #faf8f3;                     /* warm ivory */
+  --foreground: #0a1628;                     /* deep midnight */
+  --surface: #f3ede1;                        /* champagne cream */
+  --muted: #ede5d3;
+  --muted-foreground: #5a6478;               /* slate quiet */
+  --card: #ffffff;
   --card-foreground: var(--foreground);
-  --popover: oklch(1 0 0);
+  --popover: #ffffff;
   --popover-foreground: var(--foreground);
 
-  --primary: var(--foreground);
-  --primary-foreground: var(--background);
-  --secondary: oklch(0.968 0.007 247.9);
-  --secondary-foreground: var(--foreground);
+  --primary: #063970;                        /* brand navy */
+  --primary-foreground: #ffffff;
+  --secondary: #f3ede1;
+  --secondary-foreground: #063970;
 
-  --accent: oklch(0.624 0.108 188.5);        /* #0d9488 teal-600 */
-  --accent-foreground: oklch(1 0 0);
-  --accent-soft: oklch(0.977 0.025 187);     /* #f0fdfa */
+  --accent: #063970;                         /* brand navy leads */
+  --accent-foreground: #ffffff;
+  --accent-soft: #e6ecf5;                    /* soft navy tint */
+
+  --gold: #c9a24c;                           /* premium gold accent */
+  --gold-soft: #f5ecd6;
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.929 0.013 255.5);        /* slate-200 */
-  --input: oklch(0.929 0.013 255.5);
-  --ring: oklch(0.624 0.108 188.5);
+  --border: #e4dcc9;                         /* warm neutral border */
+  --input: #e4dcc9;
+  --ring: #063970;
 
-  --whatsapp: oklch(0.74 0.165 152);          /* #25D366 */
+  --whatsapp: #25d366;
 }
 
 @keyframes fade-up {

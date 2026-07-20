@@ -164,7 +164,7 @@ export const SERVICES: Service[] = [
 export const FAQS = [
   {
     q: "Is treatment at Dr. Varun's Dental Clinic painless?",
-    a: "Yes. We use modern anesthetic techniques, rotary instrumentation and a calm chair-side approach so that the vast majority of procedures — including root canals — are completely painless.",
+    a: "Yes. We use modern anesthetic techniques, rotary instrumentation and a calm chair-side approach so that the vast majority of procedures — including implant surgeries — are completely painless.",
   },
   {
     q: "Are you open on Sundays?",
