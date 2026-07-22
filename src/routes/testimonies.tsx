@@ -6,6 +6,7 @@ import video1 from "@/assets/img_7599.mp4.asset.json";
 import video2 from "@/assets/img_7600.mp4.asset.json";
 import video3 from "@/assets/img_7601.mp4.asset.json";
 import video4 from "@/assets/img_7602.mp4.asset.json";
+import video5 from "@/assets/IMG_8072.mp4.asset.json";
 
 function AutoPlayVideo({ src, label }: { src: string; label: string }) {
   const ref = useRef<HTMLVideoElement | null>(null);
@@ -42,7 +43,7 @@ function AutoPlayVideo({ src, label }: { src: string; label: string }) {
   );
 }
 
-const VIDEO_TESTIMONIALS = [video1, video2, video3, video4];
+const VIDEO_TESTIMONIALS = [video1, video2, video3, video4, video5];
 
 const TITLE = `Patient Testimonies | ${CLINIC.name}`;
 const DESC = `Read genuine patient testimonies for Dr. Varun's Dental Clinic in Ahmedabad — rated ${CLINIC.rating}★ by ${CLINIC.reviewCount}+ patients for painless, world-class dental care.`;
@@ -93,7 +94,7 @@ function TestimoniesPage() {
           <p className="mt-2 text-muted-foreground">
             Watch patients share their experience in their own words.
           </p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {VIDEO_TESTIMONIALS.map((v, i) => (
               <div
                 key={v.url}
