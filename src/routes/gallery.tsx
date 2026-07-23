@@ -6,6 +6,9 @@ import img3 from "@/assets/gallery-1000107753.jpg.asset.json";
 import img4 from "@/assets/gallery-1000107748.jpg.asset.json";
 import img5 from "@/assets/gallery-1000107781.jpg.asset.json";
 import img6 from "@/assets/gallery-1000107755.jpg.asset.json";
+import img7 from "@/assets/gallery-team-waving.jpg.asset.json";
+import img8 from "@/assets/gallery-doctor-child.jpg.asset.json";
+import img9 from "@/assets/gallery-team-thumbs.jpg.asset.json";
 
 const TITLE = `Clinic Gallery | ${CLINIC.name}, Ahmedabad`;
 const DESC = `Take a look inside Dr. Varun's Dental Clinic in Ahmedabad — modern chairs, advanced imaging and a spotless, calming environment built for painless care.`;
@@ -14,6 +17,9 @@ const PHOTOS = [
   { src: img1.url, alt: "Dedicated treatment bay with overhead operatory light" },
   { src: img2.url, alt: "Digital smile imaging workstation beside the dental chair" },
   { src: img3.url, alt: "Advanced dental unit with intra-oral X-ray and monitor" },
+  { src: img8.url, alt: "Dr. Varun with a young patient smiling in the treatment chair" },
+  { src: img7.url, alt: "Dr. Varun and the clinical team welcoming patients" },
+  { src: img9.url, alt: "The Dr. Varun's Dental Clinic team giving a thumbs up" },
   { src: img4.url, alt: "Bright operatory with natural light and modern equipment" },
   { src: img5.url, alt: "Spacious clinic interior with premium dental chair" },
   { src: img6.url, alt: "Digital radiography and precision instrumentation" },
