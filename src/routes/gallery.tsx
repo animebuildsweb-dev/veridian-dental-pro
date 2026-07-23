@@ -27,8 +27,43 @@ const PHOTOS = [
   { src: img9.url, alt: "The Dr. Varun's Dental Clinic team giving a thumbs up", span: "lg:col-span-7", aspect: "aspect-[16/10]" },
   { src: img6.url, alt: "Digital radiography and precision instrumentation", span: "lg:col-span-5", aspect: "aspect-[16/10]" },
 ];
-...
+
+export const Route = createFileRoute("/gallery")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESC },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESC },
+      { property: "og:url", content: "/gallery" },
+      { property: "og:image", content: img2.url },
+      { name: "twitter:image", content: img2.url },
+    ],
+    links: [{ rel: "canonical", href: "/gallery" }],
+  }),
+  component: GalleryPage,
+});
+
+function GalleryPage() {
+  return (
+    <section className="px-6 py-20">
+      <div className="mx-auto max-w-7xl">
+        <header className="max-w-3xl">
+          <span className="font-mono text-xs font-semibold uppercase tracking-widest text-gold">
+            Inside the clinic
+          </span>
+          <h1 className="mt-4 text-balance text-4xl font-extrabold tracking-tight md:text-6xl">
+            A calm, modern space built for painless dentistry.
+          </h1>
+          <p className="mt-6 text-lg text-muted-foreground">
+            Every corner of Dr. Varun's Dental Clinic is designed for your comfort — from
+            advanced imaging and precision instrumentation to spotless operatories and warm,
+            welcoming interiors in the heart of Odhav, Ahmedabad.
+          </p>
+        </header>
+
         <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-12 lg:gap-6">
+
           {PHOTOS.map((p, i) => (
             <figure
               key={p.src}
