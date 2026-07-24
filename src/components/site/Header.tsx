@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { CLINIC } from "@/lib/clinic";
 import { Menu, X } from "lucide-react";
+import logoAsset from "@/assets/dr-varun-logo.png.asset.json";
+
 
 const nav = [
   { to: "/services", label: "Treatments" },
@@ -19,15 +21,20 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex size-8 items-center justify-center rounded-full bg-accent font-extrabold text-accent-foreground">
-            V
-          </div>
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src={logoAsset.url}
+            alt={`${CLINIC.name} logo`}
+            width={40}
+            height={40}
+            className="size-10 rounded-full object-contain"
+          />
           <span className="text-xl font-extrabold uppercase tracking-tight">
             {CLINIC.shortName}
             <span className="text-accent">.</span>
           </span>
         </Link>
+
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {nav.map((n) => (

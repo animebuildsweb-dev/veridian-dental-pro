@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { CLINIC, SERVICES } from "@/lib/clinic";
+import logoAsset from "@/assets/dr-varun-logo.png.asset.json";
+
 
 export function Footer() {
   return (
@@ -7,13 +9,20 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="size-6 rounded-full bg-accent" aria-hidden />
+            <div className="flex items-center gap-3">
+              <img
+                src={logoAsset.url}
+                alt={`${CLINIC.name} logo`}
+                width={36}
+                height={36}
+                className="size-9 rounded-full object-contain"
+              />
               <span className="font-extrabold uppercase tracking-tight">
                 {CLINIC.shortName}
                 <span className="text-accent">.</span>
               </span>
             </div>
+
             <p className="mt-4 text-sm text-muted-foreground">
               {CLINIC.tagline}. Painless, modern dentistry in Ahmedabad — backed by 20+ years of clinical care.
             </p>
