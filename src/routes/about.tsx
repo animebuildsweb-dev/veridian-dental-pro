@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import drVarun from "@/assets/dr-varun.jpg";
+import drVarun from "@/assets/dr-varun-portrait.jpg.asset.json";
 import { CLINIC } from "@/lib/clinic";
 import { Check } from "lucide-react";
 
@@ -40,7 +40,7 @@ function AboutPage() {
 
         <div className="mt-20 grid gap-16 md:grid-cols-2 md:items-center">
           <img
-            src={drVarun}
+            src={drVarun.url}
             alt="Dr. Varun, principal dentist with over 20 years of experience"
             width={1024}
             height={1280}
