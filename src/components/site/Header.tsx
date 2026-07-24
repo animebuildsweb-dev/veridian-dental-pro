@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { CLINIC } from "@/lib/clinic";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/dr-varun-logo.png.asset.json";
+import logoAsset from "@/assets/dr-varun-logo-v2.png.asset.json";
 
 
 const nav = [
