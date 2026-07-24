@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { CLINIC, SERVICES } from "@/lib/clinic";
-import logoAsset from "@/assets/dr-varun-logo.png.asset.json";
+import logoAsset from "@/assets/dr-varun-logo-v2.png.asset.json";
 
 
 export function Footer() {
