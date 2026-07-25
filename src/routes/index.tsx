@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import clinicInterior from "@/assets/clinic-interior.jpg";
+import clinicInterior from "@/assets/clinic-advanced-dental-equipment-ahmedabad.jpg";
 import drVarunPortrait from "@/assets/dr-varun-portrait.jpg";
 import smileGallery from "@/assets/dr-varun-child-patient-dental-care-ahmedabad.jpg";
 import { CLINIC, SERVICES, TESTIMONIALS, FAQS } from "@/lib/clinic";
