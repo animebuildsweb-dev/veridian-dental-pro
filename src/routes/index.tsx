@@ -269,7 +269,7 @@ function Home() {
             </div>
             <img
               src={smileGallery}
-              alt="Bright, healthy smile after cosmetic dentistry treatment at Dr. Varun's"
+              alt="Dr. Varun with a happy child patient in the dental chair at Dr. Varun's Dental Clinic, Ahmedabad"
               width={1280}
               height={800}
               loading="lazy"
