@@ -1,31 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CLINIC } from "@/lib/clinic";
-import img1 from "@/assets/transformation-1.jpg.asset.json";
-import img2 from "@/assets/transformation-2.jpg.asset.json";
-import img3 from "@/assets/transformation-3.jpg.asset.json";
-import img4 from "@/assets/transformation-4.jpg.asset.json";
+import img1 from "@/assets/transformation-1.jpg";
+import img2 from "@/assets/transformation-2.jpg";
+import img3 from "@/assets/transformation-3.jpg";
+import img4 from "@/assets/transformation-4.jpg";
 
 const TITLE = `Smile Transformations | ${CLINIC.name}`;
 const DESC = `Real before-and-after results from Dr. Varun's Dental Clinic, Ahmedabad — teeth replacement, dental implants, full-mouth rehabilitation and restorative dentistry.`;
 
 const CASES = [
   {
-    src: img1.url,
+    src: img1,
     title: "Teeth Replacement",
     desc: "Broken and missing front teeth restored with natural-looking, tooth-coloured crowns — full aesthetics rebuilt in just a few visits.",
   },
   {
-    src: img2.url,
+    src: img2,
     title: "Full-Arch Implant Rehabilitation",
     desc: "Severely worn dentition replaced with implant-supported ceramic crowns — restored bite, speech and confidence.",
   },
   {
-    src: img3.url,
+    src: img3,
     title: "Full-Mouth Rehabilitation with Implants",
     desc: "Complete upper-arch rehabilitation with dental implants and a fixed prosthesis, giving the patient a brand-new permanent smile.",
   },
   {
-    src: img4.url,
+    src: img4,
     title: "Deep Cavity Restoration",
     desc: "Extensively decayed molars saved with root canal therapy and tooth-coloured restorations — natural tooth preserved for life.",
   },
@@ -39,9 +39,9 @@ export const Route = createFileRoute("/transformation")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: "/transformation" },
-      { property: "og:image", content: img3.url },
+      { property: "og:image", content: img3 },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: img3.url },
+      { name: "twitter:image", content: img3 },
     ],
     links: [{ rel: "canonical", href: "/transformation" }],
   }),

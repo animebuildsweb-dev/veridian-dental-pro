@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CLINIC } from "@/lib/clinic";
-import imgChair from "@/assets/premium-dental-treatment-chair-ahmedabad.jpg.asset.json";
-import imgWorkstation from "@/assets/dental-operatory-workstation-monitor-ahmedabad.jpg.asset.json";
-import imgUnit from "@/assets/advanced-dental-unit-xray-ahmedabad.jpg.asset.json";
-import imgOperatory from "@/assets/modern-dental-clinic-operatory-odhav-ahmedabad.jpg.asset.json";
-import imgInterior from "@/assets/spacious-dental-clinic-interior-ahmedabad.jpg.asset.json";
-import imgRadiography from "@/assets/digital-radiography-precision-instruments-ahmedabad.jpg.asset.json";
-import imgTeamWave from "@/assets/dr-varun-dental-team-welcoming-patients-ahmedabad.jpg.asset.json";
-import imgChild from "@/assets/dr-varun-pediatric-dental-care-ahmedabad.jpg.asset.json";
-import imgTeam from "@/assets/dr-varun-dental-clinic-team-ahmedabad.jpg.asset.json";
+import imgChair from "@/assets/premium-dental-treatment-chair-ahmedabad.jpg";
+import imgWorkstation from "@/assets/dental-operatory-workstation-monitor-ahmedabad.jpg";
+import imgUnit from "@/assets/advanced-dental-unit-xray-ahmedabad.jpg";
+import imgOperatory from "@/assets/modern-dental-clinic-operatory-odhav-ahmedabad.jpg";
+import imgInterior from "@/assets/spacious-dental-clinic-interior-ahmedabad.jpg";
+import imgRadiography from "@/assets/digital-radiography-precision-instruments-ahmedabad.jpg";
+import imgTeamWave from "@/assets/dr-varun-dental-team-welcoming-patients-ahmedabad.jpg";
+import imgChild from "@/assets/dr-varun-pediatric-dental-care-ahmedabad.jpg";
+import imgTeam from "@/assets/dr-varun-dental-clinic-team-ahmedabad.jpg";
 
 const SITE = "https://veridian-dental-pro.lovable.app";
 const TITLE = `Clinic Gallery | ${CLINIC.name}, Odhav Ahmedabad`;
@@ -19,63 +19,63 @@ const DESC = `Step inside Dr. Varun's Dental Clinic in Odhav, Ahmedabad — mode
 // consistently framed regardless of source dimensions.
 const PHOTOS = [
   {
-    src: imgTeamWave.url,
+    src: imgTeamWave,
     alt: `Dr. Varun and the clinical team welcoming patients at ${CLINIC.name} in Odhav, Ahmedabad`,
     caption: "Our team welcoming you to the clinic",
     span: "lg:col-span-8",
     aspect: "aspect-[16/10]",
   },
   {
-    src: imgChild.url,
+    src: imgChild,
     alt: `Dr. Varun providing gentle pediatric dental care to a young patient in Ahmedabad`,
     caption: "Gentle pediatric dental care",
     span: "lg:col-span-4",
     aspect: "aspect-[4/5]",
   },
   {
-    src: imgChair.url,
+    src: imgChair,
     alt: `Premium dental treatment chair and overhead operatory light at Dr. Varun's Dental Clinic, Ahmedabad`,
     caption: "Premium dental treatment chair",
     span: "lg:col-span-4",
     aspect: "aspect-[4/5]",
   },
   {
-    src: imgInterior.url,
+    src: imgInterior,
     alt: `Spacious, modern dental clinic interior with premium dental chair in Odhav, Ahmedabad`,
     caption: "Spacious modern operatory",
     span: "lg:col-span-8",
     aspect: "aspect-[16/10]",
   },
   {
-    src: imgWorkstation.url,
+    src: imgWorkstation,
     alt: `Digital smile imaging workstation beside the dental chair at Dr. Varun's Dental Clinic, Ahmedabad`,
     caption: "Digital smile imaging workstation",
     span: "lg:col-span-4",
     aspect: "aspect-[4/5]",
   },
   {
-    src: imgUnit.url,
+    src: imgUnit,
     alt: `Advanced dental unit with intra-oral X-ray and chair-side monitor in Ahmedabad`,
     caption: "Advanced dental unit with intra-oral X-ray",
     span: "lg:col-span-4",
     aspect: "aspect-[4/5]",
   },
   {
-    src: imgOperatory.url,
+    src: imgOperatory,
     alt: `Bright, modern dental operatory with natural light at Dr. Varun's Dental Clinic, Odhav Ahmedabad`,
     caption: "Bright, modern dental operatory",
     span: "lg:col-span-4",
     aspect: "aspect-[4/5]",
   },
   {
-    src: imgTeam.url,
+    src: imgTeam,
     alt: `The full Dr. Varun's Dental Clinic team celebrating together in Ahmedabad`,
     caption: "Our full clinical team",
     span: "lg:col-span-7",
     aspect: "aspect-[16/10]",
   },
   {
-    src: imgRadiography.url,
+    src: imgRadiography,
     alt: `Digital radiography and precision dental instrumentation used at Dr. Varun's Dental Clinic, Ahmedabad`,
     caption: "Digital radiography and precision instruments",
     span: "lg:col-span-5",
@@ -120,9 +120,9 @@ export const Route = createFileRoute("/gallery")({
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE}/gallery` },
-      { property: "og:image", content: `${SITE}${imgInterior.url}` },
+      { property: "og:image", content: `${SITE}${imgInterior}` },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `${SITE}${imgInterior.url}` },
+      { name: "twitter:image", content: `${SITE}${imgInterior}` },
     ],
     links: [{ rel: "canonical", href: `${SITE}/gallery` }],
     scripts: [

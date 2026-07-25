@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { CLINIC } from "@/lib/clinic";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/dr-varun-logo-v2.png.asset.json";
+import logoAsset from "@/assets/dr-varun-logo-v2.png";
 
 
 const nav = [
@@ -23,7 +23,7 @@ export function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt={`${CLINIC.name} logo`}
             width={40}
             height={40}
