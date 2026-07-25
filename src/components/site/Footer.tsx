@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { CLINIC, SERVICES } from "@/lib/clinic";
-import logoAsset from "@/assets/dr-varun-logo-v2.png.asset.json";
+import logoAsset from "@/assets/dr-varun-logo-v2.png";
 
 
 export function Footer() {
@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <img
-                src={logoAsset.url}
+                src={logoAsset}
                 alt={`${CLINIC.name} logo`}
                 width={36}
                 height={36}

@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import { CLINIC, TESTIMONIALS } from "@/lib/clinic";
 import { Quote, Star } from "lucide-react";
-import video1 from "@/assets/img_7599.mp4.asset.json";
-import video2 from "@/assets/img_7600.mp4.asset.json";
-import video3 from "@/assets/img_7601.mp4.asset.json";
+import video1 from "@/assets/img_7599.mp4";
+import video2 from "@/assets/img_7600.mp4";
+import video3 from "@/assets/img_7601.mp4";
 import video4 from "@/assets/img_7602.mp4.asset.json";
 import video5 from "@/assets/IMG_8072.mp4.asset.json";
 
