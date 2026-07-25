@@ -5,8 +5,8 @@ import { Quote, Star } from "lucide-react";
 import video1 from "@/assets/img_7599.mp4";
 import video2 from "@/assets/img_7600.mp4";
 import video3 from "@/assets/img_7601.mp4";
-import video4 from "@/assets/img_7602.mp4.asset.json";
-import video5 from "@/assets/IMG_8072.mp4.asset.json";
+import video4 from "@/assets/img_7602.mp4";
+import video5 from "@/assets/IMG_8072.mp4";
 
 function AutoPlayVideo({ src, label }: { src: string; label: string }) {
   const ref = useRef<HTMLVideoElement | null>(null);
@@ -97,10 +97,10 @@ function TestimoniesPage() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {VIDEO_TESTIMONIALS.map((v, i) => (
               <div
-                key={v.url}
+                key={v}
                 className="overflow-hidden rounded-3xl border border-border bg-card"
               >
-                <AutoPlayVideo src={v.url} label={`Patient video testimony ${i + 1}`} />
+                <AutoPlayVideo src={v} label={`Patient video testimony ${i + 1}`} />
               </div>
             ))}
           </div>
