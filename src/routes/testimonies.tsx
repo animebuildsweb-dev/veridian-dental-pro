@@ -97,10 +97,10 @@ function TestimoniesPage() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {VIDEO_TESTIMONIALS.map((v, i) => (
               <div
-                key={v.url}
+                key={v}
                 className="overflow-hidden rounded-3xl border border-border bg-card"
               >
-                <AutoPlayVideo src={v.url} label={`Patient video testimony ${i + 1}`} />
+                <AutoPlayVideo src={v} label={`Patient video testimony ${i + 1}`} />
               </div>
             ))}
           </div>
