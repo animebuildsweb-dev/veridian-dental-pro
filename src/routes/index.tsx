@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import clinicInterior from "@/assets/clinic-interior.jpg";
-import drVarun from "@/assets/dr-varun.jpg";
+import drVarunPortrait from "@/assets/dr-varun-portrait.jpg.asset.json";
 import smileGallery from "@/assets/smile-gallery.jpg";
 import { CLINIC, SERVICES, TESTIMONIALS, FAQS } from "@/lib/clinic";
 import { ArrowUpRight, Check, MapPin, Phone, Clock, Star } from "lucide-react";
