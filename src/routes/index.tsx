@@ -166,7 +166,7 @@ function Home() {
       <section id="about" className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
           <img
-            src={drVarun}
+            src={drVarunPortrait.url}
             alt="Dr. Varun, founder and principal dentist at Dr. Varun's Dental Clinic Ahmedabad"
             width={1024}
             height={1280}
