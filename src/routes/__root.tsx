@@ -148,8 +148,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: "/__l5e/assets-v1/1bc32a45-d490-41c9-84a3-6e8ff9efea9f/dr-varun-logo-v2.png" },
-      { rel: "apple-touch-icon", href: "/__l5e/assets-v1/1bc32a45-d490-41c9-84a3-6e8ff9efea9f/dr-varun-logo-v2.png" },
+      { rel: "icon", type: "image/png", href: "/dr-varun-logo-v2.png" },
+      { rel: "apple-touch-icon", href: "/dr-varun-logo-v2.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
