@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import clinicInterior from "@/assets/clinic-interior.jpg";
-import drVarun from "@/assets/dr-varun.jpg";
+import drVarunPortrait from "@/assets/dr-varun-portrait.jpg.asset.json";
 import smileGallery from "@/assets/smile-gallery.jpg";
 import { CLINIC, SERVICES, TESTIMONIALS, FAQS } from "@/lib/clinic";
 import { ArrowUpRight, Check, MapPin, Phone, Clock, Star } from "lucide-react";
@@ -166,7 +166,7 @@ function Home() {
       <section id="about" className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
           <img
-            src={drVarun}
+            src={drVarunPortrait.url}
             alt="Dr. Varun, founder and principal dentist at Dr. Varun's Dental Clinic Ahmedabad"
             width={1024}
             height={1280}
