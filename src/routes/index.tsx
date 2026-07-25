@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import clinicInterior from "@/assets/clinic-interior.jpg";
 import drVarunPortrait from "@/assets/dr-varun-portrait.jpg";
-import smileGallery from "@/assets/smile-gallery.jpg";
+import smileGallery from "@/assets/dr-varun-child-patient-dental-care-ahmedabad.jpg";
 import { CLINIC, SERVICES, TESTIMONIALS, FAQS } from "@/lib/clinic";
 import { ArrowUpRight, Check, MapPin, Phone, Clock, Star } from "lucide-react";
 
@@ -269,7 +269,7 @@ function Home() {
             </div>
             <img
               src={smileGallery}
-              alt="Bright, healthy smile after cosmetic dentistry treatment at Dr. Varun's"
+              alt="Dr. Varun with a happy child patient in the dental chair at Dr. Varun's Dental Clinic, Ahmedabad"
               width={1280}
               height={800}
               loading="lazy"
