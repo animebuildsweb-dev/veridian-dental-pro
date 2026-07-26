@@ -172,7 +172,7 @@ export const FAQS = [
   },
   {
     q: "Do you offer same-day appointments?",
-    a: "We hold a few same-day slots every day. Call 095580 44955 or message us on WhatsApp for the next available time.",
+    a: "We hold a few same-day slots every day. Call 094270 49767 or message us on WhatsApp for the next available time.",
   },
   {
     q: "Where is the clinic located?",
@@ -184,7 +184,7 @@ export const FAQS = [
   },
   {
     q: "How do I book an appointment?",
-    a: "Tap any 'Book Appointment' button to message us on WhatsApp, or call 095580 44955. We confirm your slot within minutes.",
+    a: "Tap any 'Book Appointment' button to message us on WhatsApp, or call 094270 49767. We confirm your slot within minutes.",
   },
 ];
 
